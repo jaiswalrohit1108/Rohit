@@ -2357,12 +2357,9 @@ footer strong { color:var(--cy); }
     <div class="sec-lbl" id="proj-sec-lbl">What I've Built</div>
     <h2 class="sec-ttl" id="proj-sec-ttl">My <span>Projects</span></h2>
     <div class="sec-div"></div>
-
- </div>
-    <div style="text-align:center;color:var(--muted);grid-column:1/-1;padding:60px">
-      <i class="fas fa-spinner fa-spin" style="font-size:2rem;color:var(--orange)"></i>
-    </div>
- </div>
+  </div>
+  <div class="proj-grid" id="proj-grid">
+  </div>
 </section>
 
 <!-- ======= BUSINESS ======= -->
@@ -2607,7 +2604,19 @@ const DATA = {
       { name: 'Business ideas', pct: 90 }
     ]
   },
-  projects: [],
+  projects: [
+    {
+      id: 'p1',
+      title: 'Personal AI Superagent',
+      category: 'AI / Automation',
+      status: 'Active',
+      description: 'A fully personalised AI assistant built on Base44. It manages tasks, automates workflows, connects to third-party services (Gmail, Calendar, Slack and more), runs scheduled jobs, and remembers context across conversations — acting as a real personal productivity engine.',
+      tech_stack: 'Base44, JavaScript, AI/LLM, REST APIs, OAuth, Automation',
+      project_url: 'https://app.base44.com/superagent/6a043391ace19fa01d449dd5',
+      github_url: '',
+      image_url: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80'
+    }
+  ],
   gallery: {
     secLabel: 'My Journey',
     secTitle: 'Photo <span>Gallery</span>',
